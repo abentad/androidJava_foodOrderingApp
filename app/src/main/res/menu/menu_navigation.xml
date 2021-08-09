@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/btnav_cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_cart"/>
+
+    <item
+        android:id="@+id/btnav_setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_settings"/>
+
+    <item
+        android:id="@+id/btnav_about"
+        android:title="About"
+        android:icon="@drawable/ic_info"/>
+
+
+</menu>
