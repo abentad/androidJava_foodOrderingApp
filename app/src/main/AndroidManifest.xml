@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rentoch.foodorderingapp">
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -10,16 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodOrderingApp">
         <activity
+            android:name=".PaymentAwash"
+            android:exported="true" />
+        <activity
             android:name=".aboutScreen"
             android:exported="true" />
         <activity
             android:name=".settingScreen"
             android:exported="true" />
         <activity
-            android:name=".cartScreen"
+            android:name=".HomeScreenActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeScreenActivity"
+            android:name=".cartScreen"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

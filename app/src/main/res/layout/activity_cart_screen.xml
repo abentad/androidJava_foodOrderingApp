@@ -4,34 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".cartScreen">
 
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginStart="14dp"-->
+    <!--        android:layout_marginTop="312dp"-->
+    <!--        android:text="Cart"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.478"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_navigation" />
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="cart appear here"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#084873"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/priceView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Price"
+        android:paddingLeft="20dp"
+        android:rotationY="0"
+        android:textAlignment="viewStart"
+        android:textColor="#081B53"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/priceView2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/priceView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Price"
+        android:paddingLeft="20dp"
+        android:rotationY="0"
+        android:textAlignment="viewStart"
+        android:textColor="#081B53"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/awashImageButton"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="Pay with" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="312dp"
-        android:text="Cart"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Your Orders"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+    <ImageButton
+        android:id="@+id/awashImageButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:itemBackground="@color/colorPrimary"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_navigation" />
+        app:srcCompat="@drawable/awash"
+        android:scaleType="centerCrop"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

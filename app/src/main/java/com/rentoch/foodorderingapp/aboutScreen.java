@@ -33,11 +33,11 @@ public class aboutScreen extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.btnav_cart:
-                        Intent i = new Intent(getApplicationContext(),cartScreen.class);
-                        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(i);
-                        finish();
-                        overridePendingTransition(0,0);
+//                        Intent i = new Intent(getApplicationContext(),cartScreen.class);
+//                        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                        startActivity(i);
+//                        finish();
+//                        overridePendingTransition(0,0);
                         return true;
                     case R.id.btnav_setting:
                         Intent in = new Intent(getApplicationContext(),settingScreen.class);
